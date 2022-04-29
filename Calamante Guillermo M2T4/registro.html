@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="shortcut icon" href="./Imagenes/favicon.png">
+    <link rel="stylesheet" href="./Styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <a href="index.html"><img src="./Imagenes/logocortado.png" alt="Logo Amazing Events"></a>
+            <a href="index.html"><h1>Amazing Events</h1></a>
+        </div>
+        <nav>
+            <a class="btn" href="proximos.html">Próximos eventos</a>
+            <a class="btn" href="pasados.html">Eventos realizados</a>
+            <a class="a-registro" href="registro.html"><span>Registro</span><span class="manito">📋</span></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Regístrese aquí</h2>
+            <form action="show_data.html">
+                <div class="form-duo">
+                    <div>
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" name="nombre-completo" id="nombre" placeholder="Nombres y apellido">
+                    </div>
+                    <div>
+                        <label for="mail">Email</label>
+                        <input type="email" name="email" id="mail" placeholder="amazingevents@email.com">
+                    </div>
+                </div>
+                <div class="form-duo">
+                    <div>
+                        <label for="contra">Contraseña</label>
+                        <input type="password" name="contraseña" id="contra" placeholder="Contraseña1234">
+                    </div>
+                    <div>
+                        <label for="contra-confirm">Confirme la contraseña</label>
+                        <input type="password" name="contraseña-confirmada" id="contra-confirm" placeholder="Contraseña1234">
+                    </div>
+                </div>
+                <div class="form-duo">
+                    <div>
+                        <label for="eventos">Tipos de eventos</label>
+                        <select name="Tipos de eventos" id="eventos">
+                            <option value="todos">Todos los eventos</option>
+                            <option value="familiares">Eventos familiares o para menores</option>
+                            <option value="+18">Eventos para mayores de 18</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h6 class="legend">Categorias de eventos preferidas</h6>
+                        <div>
+                            <div>
+                                <div class="checkbox">
+                                    <input class="checkbox" type="checkbox" name="cine" id="cine">
+                                    <label for="cine">Vamos al Cine</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox" type="checkbox" name="comida" id="comida">
+                                    <label for="comida">Ferias de Comida</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox" type="checkbox" name="museo" id="museo">
+                                    <label for="museo">Salidas al museo</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox" type="checkbox" name="Carrera" id="Carrera">
+                                    <label for="Carrera">Carreras</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox" type="checkbox" name="libros" id="libros">
+                                    <label for="libros">Intercambio de Libros</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox" type="checkbox" name="concierto" id="concierto">
+                                    <label for="concierto">Conciertos de Música</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox" type="checkbox" name="disfraces" id="disfraces">
+                                    <label for="disfraces">Fiestas de Disfraces</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <input class="checkbox" type="checkbox" name="terminos-y-condiciones" id="condiciones">
+                    <label for="condiciones">Acepto los términos y condiciones</label>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h4>Derechos reservados @2022</h4>
+    </footer>
+</body>
+</html>

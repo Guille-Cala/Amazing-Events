@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+	min-height: 100vh;
+    background: rgb(173,83,137);
+    background: radial-gradient(circle, rgba(173,83,137,1) 47%, rgba(60,16,83,1) 95%);
+}
+header{
+    border-bottom: 3px solid white;
+    height: auto;
+}
+.cabecera{
+    display: flex;
+    margin: .5rem;
+}
+h1{
+    align-self: center;
+    color: white;
+    -webkit-text-stroke: .5px black ;
+    margin: .5rem;
+    font-size: 40px;
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: end;
+}
+nav a {
+    color: white;
+    padding: .5rem;
+    margin-right: .5rem;
+    margin-bottom: .3rem;
+}
+a{
+    text-decoration: none;
+}
+.a-registro{
+    border-radius: 1.625rem;
+    background-color: #282936;
+    color: #ad5389;
+}
+a>.manito{
+    font-size: 0;
+}
+main{
+    flex-grow: 1;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+section>h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 5vh;
+    /* color: #7c33aa; */
+    color: white;
+    -webkit-text-stroke: .5px black ;
+    /* -webkit-text-stroke: 1px black ; */
+}
+section h3{
+    font-size: 25px;
+    text-align: center;
+    margin: .5rem 1rem;
+    color: black;
+}
+.tarjetero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tarjeta, #detalles{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border: 3px solid black;
+    margin: 5vh 3vw;
+    height: 25vh;
+    width: 90vw;   
+    background-color: white;
+    border-radius: 0 1.625rem 1.625rem 0;
+}
+.tarjeta img{
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+.tarjeta>a{
+    height: 100%;
+    max-width: 30%;
+}
+.tarjeta>div{
+    min-width: 50%;
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tarjeta>div>a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+#detalles{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border-radius: 0  0 1.625rem 1.625rem;
+}
+#detalles>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#detalles>div>div{
+    width: 70%;
+    margin: .5rem 0;
+}
+#detalles img{
+    width: 100%;
+    height: auto;
+}
+.texto-tarj{
+    text-align: center;
+    padding: 4px .5rem;
+}
+form{
+    margin: 1rem;
+    width: 90vw;
+}
+form div:not(.checkbox, .form-duo){
+    display: flex;
+    flex-direction: column;
+    margin: .35rem;
+}
+.condiciones{
+    margin: 1rem;
+}
+input:not(.checkbox), select{
+    height: 3rem;
+    font-size: 20px;
+    text-indent: 1rem;
+}
+label, .legend{
+    font-size: 22px;
+    font-weight: normal;
+}
+table{
+    width: auto !important;
+    border: 2px solid black !important;
+    background-color: #ffffff49;
+}
+th{
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+td{
+    border: 2px solid #282936;
+    text-align: center;
+    padding: 1px 3px;
+}
+footer{
+    display: flex;
+    justify-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    border-top: 3px solid white;
+    margin-top: 5vh;
+}
+footer h4{
+    color: white;
+}
+.no-hover:hover{
+    color: white !important;
+}
+@media screen and (min-width: 375px) {
+    .tarjeta>a{
+        height: 100%;
+        max-width: 50%;
+    }
+}
+@media screen and (min-width: 500px) {
+    #detalles{
+        width: auto;
+        max-width: 55vw;
+    }
+}
+@media screen and (min-width: 820px) {
+    nav a{
+        font-size: 24px;
+    }
+    .tarjeta{
+        width: 37vw;
+        height: 20vh;
+    }
+    #detalles{
+        max-width: 40vw;
+    }
+    .form-duo{
+        display: flex;
+    }
+    input:not(.checkbox), select{
+        width: 41.5vw;
+        margin-right: 2vw;
+    }
+}
+@media screen and (min-width: 992px){
+    .a-registro:hover{
+        font-size: 0;
+    }
+    .a-registro:hover>.manito{
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 0 1.845rem;
+    }
+    .tarjeta{
+        height: 25vh;
+        width: 34vw;
+    }
+    #detalles{
+        max-width: 30vw;
+    }
+    input:not(.checkbox), select{
+        max-width: 41.5vw;
+        margin-right: 2vw;
+    }
+}
